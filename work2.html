@@ -67,19 +67,19 @@ h1 {letter-spacing: 6px}
 <!-- Photo Grid -->
 <div class="w3-main w3-content w3-padding w3-row-padding" style="max-width:1200px;margin-top:100px">
     <div class="w3-col l3 m6">
-      <img src="13.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="A microphone">
+      <img src="13.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="My team">
    </div>
 
     <div class="w3-col l3 m6">
-      <img src="14.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="A phone">
+      <img src="14.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="My lord">
     </div>
 
     <div class="w3-col l3 m6">
-      <img src="15.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="A drone">
+      <img src="15.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="I love Jesus">
     </div>
 
     <div class="w3-col l3 m6">
-      <img src="16.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Soundbox">
+      <img src="16.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Picture">
     </div>
   </div>
 
@@ -112,6 +112,14 @@ h1 {letter-spacing: 6px}
 
   
 </footer>
-
+<script>
+// Modal Image Gallery
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
+}
+</script>
 </body>
 </html>
